@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Loisirs & Engagements – Fatou FALL</title>
+  <link rel="stylesheet" href="stylefin.css">
+</head>
+<body>
+
+<nav>
+  <a href="accueil.html">Accueil</a>
+  <a href="formation.html">Formations</a>
+  <a href="experience.html">Expériences</a>
+  <a href="competences.html">Compétences</a>
+  <a href="loisirs.html">Loisirs</a>
+</nav>
+
+<section>
+  <h1>Loisirs & Engagements</h1>
+
+  <!-- Basket -->
+  <div class="loisir-block left">
+    <img src="Images-20250505/IMG_3332.jpg" alt="Basket 1">
+    <div>
+      <h2>Basket-ball🏀</h2>
+      <p>Le basket est bien plus qu’un sport pour moi : c’est une école de vie.  
+      J’y ai appris l’esprit d’équipe, la discipline et la persévérance.  
+      C’est une activité qui m’équilibre, m’énergise et me permet de rester constante dans mes objectifs.</p>
+    </div>
+  </div>
+
+  <!-- Athlétisme -->
+  <div class="loisir-block right">
+    <img src="Images-20250505/ATHLETE.JPG" alt="Révélation Athlétisme">
+    <div>
+      <h2>🏃‍♀️ Révélation de l’année 2022</h2>
+      <p>J’ai été désignée “Révélation de l’année” au basket pour mes performances durant les matchs mais également pour mes performances en athlétisme.  
+      Cette discipline m’a appris l’effort individuel, l’endurance et la régularité, des qualités que j’applique aussi dans mes études.</p>
+    </div>
+  </div>
+
+  <!-- Vulgarisation -->
+  <h2> Vulgarisation – IPSL</h2>
+  <p>J’ai participé à des campagnes de vulgarisation dans plusieurs lycées sénégalais au nom de l’IPSL5 Institut Polytechnique de Saint-Louis.  
+  J’y présentais les parcours scientifiques de l’école et les opportunités qu'elle offrait et je partageais aussi mon expérience et encourageais les jeunes à s’orienter vers les sciences.  
+  Cette mission m’a appris à communiquer simplement et à transmettre des connaissances.</p>
+
+  <div class="slider-container">
+    <button class="slider-btn prev" onclick="plusSlides(-1, 0)">❮</button>
+    <div class="slide-box">
+      <img class="slide slide-0" src="Images-20250505/VULGAVKANCE1.JPG" style="display:block;">
+      <img class="slide slide-0" src="Images-20250505/vulgl1.JPG" style="display:block;">
+      <img class="slide slide-0" src="Images-20250505/vulgl2.JPG">
+      <img class="slide slide-0" src="Images-20250505/vulgl3.JPG">
+      <img class="slide slide-0" src="Images-20250505/vulgl4.JPG">
+    </div>
+    <button class="slider-btn next" onclick="plusSlides(1, 0)">❯</button>
+  </div>
+
+  <!-- Petit Génie -->
+  <h2> Concours Petit Génie – Louga</h2>
+  <p>J’ai encadré la finale régionale du concours national “Petit Génie” à Louga.  
+  Ce concours récompense les meilleurs élèves scientifiques du Sénégal.  
+  J’ai assuré la coordination, le suivi des épreuves, et l’accompagnement des jeunes candidats.</p>
+
+  <div class="slider-container">
+    <button class="slider-btn prev" onclick="plusSlides(-1, 1)">❮</button>
+    <div class="slide-box">
+      <img class="slide slide-1" src="Images-20250505/LMS.JPEG" style="display:block;">
+      <img class="slide slide-1" src="Images-20250505/concours ptit genie1.JPG">
+      <img class="slide slide-1" src="Images-20250505/concours ptit genie2.JPG">
+    </div>
+    <button class="slider-btn next" onclick="plusSlides(1, 1)">❯</button>
+  </div>
+  <h2>📖 Lecture & Voyage</h2>
+<p>J’aime voyager autant que lire. Ces deux passions m’ouvrent l’esprit, m’aident à découvrir de nouvelles cultures, à mieux comprendre le monde et à nourrir ma curiosité.  
+Chaque voyage m’apporte une leçon de vie, tout comme chaque livre m’ouvre un nouvel horizon.  
+Ces moments me ressourcent, me recentrent, et m’aident à rester créative et motivée dans mes projets.</p>
+
+<!-- Galerie à flèches – Voyage -->
+<div class="slider-container">
+  <button class="slider-btn prev" onclick="plusSlides(-1, 2)">❮</button>
+  <div class="slide-box">
+    <img class="slide slide-2" src="Images-20250505/IMG_0135.jpg" style="display:block;">
+    <img class="slide slide-2" src="Images-20250505/IMG_0846.jpg">
+    <img class="slide slide-2" src="Images-20250505/IMG_0257.jpg">
+    <img class="slide slide-2" src="Images-20250505/IMG_0847.jpg">
+  </div>
+  <button class="slider-btn next" onclick="plusSlides(1, 2)">❯</button>
+</div>
+
+
+  <!-- Conclusion -->
+  <div class="loisir-conclusion">
+    <h2>💬 Ce que ces engagements m’ont apporté</h2>
+    <p>Au-delà des cours, ces activités m’ont permis de me forger des qualités humaines essentielles : confiance, responsabilité, engagement, esprit d’initiative.  
+    Elles font partie de mon identité personnelle et professionnelle.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Contacts</p>
+  <p>
+    📧 <a href="mailto:ffa29096@gmail.com">ffa29096@gmail.com</a> |
+    📞 06 52 43 19 39 |
+    💼 <a href="https://www.linkedin.com/in/fatou-fall-2a8707357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+  </p>
+</footer>
+
+<!-- Script pour les flèches -->
+<script>
+let slideIndexes = [1, 1, 1];  
+const slideClassNames = ["slide-0", "slide-1", "slide-2"];
+
+function plusSlides(n, sliderIndex) {
+  showSlides(slideIndexes[sliderIndex] += n, sliderIndex);
+}
+
+function showSlides(n, sliderIndex) {
+  let slides = document.getElementsByClassName(slideClassNames[sliderIndex]);
+  if (n > slides.length) slideIndexes[sliderIndex] = 1;
+  if (n < 1) slideIndexes[sliderIndex] = slides.length;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndexes[sliderIndex] - 1].style.display = "block";
+}
+
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2); // Initialiser le carrousel voyage
+
+</script>
+
+</body>
+</html>

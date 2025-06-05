@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Expériences – Fatou FALL</title>
+  <link rel="stylesheet" href="stylefin.css">
+</head>
+<body>
+
+<nav>
+  <a href="accueil.html">Accueil</a>
+  <a href="formation.html">Formations</a>
+  <a href="experience.html">Expériences</a>
+  <a href="competences.html">Compétences</a>
+  <a href="loisirs.html">Loisirs</a>
+</nav>
+
+<section>
+  <h1>Mes Expériences Professionnelles</h1>
+
+  <!-- Intérim / Jobs d'été -->
+  <h2> Intérim & Jobs d’été</h2>
+  <p>Avant mes formations techniques, j’ai effectué plusieurs missions d’intérim en usine et dans la restauration.  
+  Ces premières expériences m’ont appris la rigueur, le respect des consignes, la ponctualité, ainsi que le travail en équipe dans des environnements très variés.  
+  Elles ont posé les premières bases de mon sens professionnel.</p>
+
+  <!-- Stage à l’ITA -->
+  <h2>Stage à l’Institut de Technologie Alimentaire (ITA) – Dakar</h2>
+  <p>Durant mon BTS, j’ai réalisé un stage au sein de l’ITA de Dakar, sur une machine industrielle clé : un <strong>atomiseur industriel</strong> utilisé pour le séchage du café.  
+  À mon arrivée, la machine ne fonctionnait plus. J’ai donc mené une étude complète du système :</p>
+
+  <ul>
+    <li>Analyse des flux de circulation du produit et de l’air chaud</li>
+    <li>Création du schéma de régulation</li>
+    <li>Diagnostic complet du circuit de fonctionnement</li>
+    <li>Détection d’un filtre à air bouché en amont de l’atomiseur</li>
+    <li>Remise en fonctionnement, puis tests de validation</li>
+  </ul>
+
+  <p>Ce stage a été extrêmement formateur. Il m’a permis de développer ma rigueur technique, mes capacités d’analyse, ainsi que ma confiance dans la résolution de pannes complexes.</p>
+
+  <!-- Carrousel ITA -->
+  <div class="slider-container">
+    <button class="slider-btn prev" onclick="plusSlides(-1, 0)">❮</button>
+    <div class="slide-box">
+      <img class="slide slide-0" src="Images-20250505/IMG_9259.jpg" style="display:block;">
+      <img class="slide slide-0" src="Images-20250505/IMG_9265.jpg">
+      <img class="slide slide-0" src="Images-20250505/IMG_9284.jpg">
+    </div>
+    <button class="slider-btn next" onclick="plusSlides(1, 0)">❯</button>
+  </div>
+
+  <!-- Projets BTS -->
+  <h2> Projets réalisés en BTS CIRA</h2>
+  <p>Durant ma formation, j’ai participé à différents projets techniques :
+  <ul>
+    <li>Régulation d’un système de dosage pondéral</li>
+    <li>Projet de supervision avec schémas électriques et maquette physique</li>
+    <li>Initiation à la programmation de systèmes automatisés</li>
+  </ul>
+  <p>Ces projets m’ont permis d’acquérir des compétences concrètes et de renforcer mon autonomie technique.</p>
+
+  <!-- Alternance Aubret -->
+  <h2> Alternance – Entreprise Aubret (groupe Eureden)</h2>
+  <p>Actuellement en alternance chez Aubret, au sein du service Travaux Neufs, j’interviens sur l’ensemble des projets industriels internes.  
+  Mon service est transversal, ce qui me donne la chance de collaborer avec la production, la qualité, le service maintenance, la supply chain, la sécurité et l’environnement.</p>
+
+  <p>Ce poste me permet de :
+  <ul>
+    <li>Participer à la conception et à la mise en œuvre de projets industriels</li>
+    <li>Apporter des solutions techniques innovantes</li>
+    <li>Développer mes capacités de communication interservices</li>
+    <li>Avoir une vision globale des enjeux industriels</li>
+  </ul>
+  </p>
+
+  <!-- Carrousel Alternance -->
+  <div class="slider-container">
+    <button class="slider-btn prev" onclick="plusSlides(-1, 1)">❮</button>
+    <div class="slide-box">
+      <img class="slide slide-1" src="Images-20250505/AUBRET.JPEG" style="display:block;">
+      <img class="slide slide-1" src="Images-20250505/IMG_2300.jpg">
+      <img class="slide slide-1" src="Images-20250505/IMG_5618.jpg">
+    </div>
+    <button class="slider-btn next" onclick="plusSlides(1, 1)">❯</button>
+  </div>
+
+</section>
+
+<footer>
+  <p>Contacts</p>
+  <p>
+    📧 <a href="mailto:ffa29096@gmail.com">ffa29096@gmail.com</a> |
+    📞 06 52 43 19 39 |
+    💼 <a href="https://www.linkedin.com/in/fatou-fall-2a8707357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+  </p>
+</footer>
+
+<!-- Script flèches carrousels -->
+<script>
+let slideIndexes = [1, 1];
+const slideClassNames = ["slide-0", "slide-1"];
+
+function plusSlides(n, sliderIndex) {
+  showSlides(slideIndexes[sliderIndex] += n, sliderIndex);
+}
+
+function showSlides(n, sliderIndex) {
+  let slides = document.getElementsByClassName(slideClassNames[sliderIndex]);
+  if (n > slides.length) slideIndexes[sliderIndex] = 1;
+  if (n < 1) slideIndexes[sliderIndex] = slides.length;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndexes[sliderIndex] - 1].style.display = "block";
+}
+
+// Initialisation
+showSlides(1, 0); // ITA
+showSlides(1, 1); // Aubrey
+</script>
+
+</body>
+</html>
